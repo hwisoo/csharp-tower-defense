@@ -1,0 +1,7 @@
+namespace Defense 
+{
+  class Path
+  {
+    
+  }
+}

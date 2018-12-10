@@ -15,13 +15,12 @@ namespace Defense
 
     public int DistanceTo(int x, int y)
     {
-      int xDiff = X -x;
-      int yDiff = Y -y;
+      return (int)Math.Sqrt(Math.Pow(X-x, 2) + Math.Pow(Y-y, 2));
+    }
 
-      int xDiffSquared = xDiff * xDiff;
-      int yDiffSquared = yDiff * yDiff;
-
-      return (int)Math.Sqrt(xDiffSquared + yDiffSquared);
+    public int DistanceTo(Point point)
+    {
+      return DistanceTo(point.X, point.Y);
     }
   }
 }
